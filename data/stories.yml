@@ -1,0 +1,13 @@
+# data/stories.yml
+
+version: "3.1"
+stories:
+- story: greet path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

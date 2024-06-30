@@ -1,0 +1,12 @@
+# render.yaml
+
+services:
+  - type: web
+    name: rasa-chatbot
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: RASA_ENV
+        value: production
